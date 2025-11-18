@@ -1,69 +1,1006 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HV Miguel Zambrano Herrera</title>
+    <meta name="description" content="Miguel Zambrano - Desarrollador Full Stack .NET & Angular con 6+ años de experiencia">
+    <meta name="keywords" content="Desarrollador .NET, Angular, Full Stack, C#, SQL Server">
+    <meta name="author" content="Miguel Zambrano Herrera">
+    <title>Miguel Zambrano | Full Stack Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div><img src="img/foto.jpg" alt="Foto de Perfil"></div>
-        <h1>Miguel Zambrano Herrera</h1>
-        <p>¡Hola Mundo!</p>
-    </header>
-    <main>
-        <section>
-            <h3>PERFIL</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit veniam repellat ea quia, sed est deleniti laborum totam mollitia, accusamus id rerum. Vel asperiores voluptates velit quod eaque quidem illo.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam numquam et corrupti explicabo, labore magnam cum error quis iusto fuga, corporis beatae nesciunt! Commodi culpa mollitia eligendi in nisi?
-            </p>
-        </section>
-        <section>
-            <h3 class="skills">HABILIDADES</h3>
-            <div class="column">
-                <h4>Conocimientos Avanzados</h4>
-                <ol>
-                    <li>JAVA</li>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                    <li>Angular 7</li>
-                    <li>Bootstrap 4</li>
-                </ol>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-text">MZ</span>
             </div>
-            <div class="column">
-                <h4>Conocimientos Basico</h4>
-                <ol>
-                    <li>Nodejs</li>
-                    <li>.NET</li>
-                </ol>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#education" class="nav-link">Educación</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-greeting">Hola, soy</span>
+                <h1 class="hero-title">Miguel Zambrano Herrera</h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">
+                    Desarrollador .NET & Angular con 6+ años de experiencia creando 
+                    aplicaciones web robustas y escalables
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contáctame</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/miguel-zambrano-herrera" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Devmiguelz" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:zmiguel96@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <h4>Lenguajes</h4>
-                <ul>
-                    <li>Español - Nativo</li>
-                    <li>Ingles - Nivel 2</li>
-                </ul>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="img/foto.jpg" alt="Miguel Zambrano">
+                    <div class="image-border"></div>
+                </div>
             </div>
-        </section>
-        <section>
-            <h3>Formacion</h3>
-            <article>
-                <div class="degree">
-                    <span>2013  </span><strong>Bachiller</strong>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Conóceme</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <p class="about-text">
+                        Soy un <strong>desarrollador full-stack .NET y Angular</strong> con más de 6 años de experiencia 
+                        en el desarrollo de aplicaciones web robustas y escalables. Me especializo en crear soluciones 
+                        tecnológicas que optimizan procesos empresariales y mejoran la experiencia del usuario.
+                    </p>
+                    <p class="about-text">
+                        Mi enfoque se centra en escribir <strong>código limpio, mantenible y bien documentado</strong>, 
+                        siguiendo las mejores prácticas y patrones de diseño como SOLID, DDD y arquitectura hexagonal. 
+                        Tengo experiencia en el diseño y optimización de bases de datos relacionales y en la implementación 
+                        de APIs RESTful escalables.
+                    </p>
+                    <p class="about-text">
+                        He trabajado en proyectos del sector <strong>salud, financiero, educativo y comercio electrónico</strong>, 
+                        colaborando con equipos multidisciplinarios utilizando metodologías ágiles como Scrum. 
+                        Busco constantemente nuevos desafíos que me permitan contribuir a proyectos innovadores 
+                        e impulsar la excelencia tecnológica.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>6+ Años</h4>
+                                <p>Experiencia</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>20+</h4>
+                                <p>Proyectos Completados</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>5+</h4>
+                                <p>Empresas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">Hablemos</a>
+                        <a href="documents/CV_Miguel_Zambrano.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                    </div>
                 </div>
-                <div class="school">
-                    Institucion Educativa CODESA
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Mi Trayectoria</span>
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <!-- Personal Soft -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Software Developer</h3>
+                            <span class="company">Personal Soft S.A.S.</span>
+                            <span class="period">Octubre 2024 - Presente</span>
+                            <span class="location">Medellín, Colombia</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project-name"><strong>Proyecto SIM</strong> - Sector Salud</p>
+                            <p>
+                                Plataforma centrada en la atención de pacientes con tratamientos de alto costo, 
+                                integrando EPS, médicos y pacientes para el seguimiento de salud.
+                            </p>
+                            <ul class="responsibilities">
+                                <li>Diseño y desarrollo de componentes, servicios y formularios reactivos con Angular</li>
+                                <li>Implementación de servicios backend aplicando patrón DDD</li>
+                                <li>Generación de reportes con Reporting Services</li>
+                                <li>Diseño de modelos de datos y desarrollo de stored procedures en SQL Server</li>
+                                <li>Implementación de pruebas unitarias (Xunit, MsTest)</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">.NET Framework 4.5</span>
+                                <span class="tech-tag">Angular 10</span>
+                                <span class="tech-tag">NgPrime</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Entity Framework</span>
+                                <span class="tech-tag">Azure DevOps</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="degree">
-                    <span>2020  </span><strong>Ingeniero de Sistemas</strong>
+
+                <!-- LinkTIC -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniero Semi-Senior</h3>
+                            <span class="company">LinkTIC S.A.S</span>
+                            <span class="period">Julio 2024 - Diciembre 2024</span>
+                            <span class="location">Bogotá, Colombia</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project-name"><strong>Proyecto Fidu-Previsora</strong> - Sector Financiero</p>
+                            <p>
+                                Plataforma fiduciaria para administración y gestión de negocios fiduciarios, 
+                                activos y patrimonios.
+                            </p>
+                            <ul class="responsibilities">
+                                <li>Desarrollo backend con .NET 8 aplicando arquitectura DDD y principios SOLID</li>
+                                <li>Diseño de modelos de datos y scripts para PostgreSQL</li>
+                                <li>Implementación de Health-Check y Entity Framework Core</li>
+                                <li>Desarrollo de pruebas unitarias con Xunit y Mock</li>
+                                <li>Análisis de historias de usuario y requerimientos funcionales</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">.NET 8</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Entity Framework Core</span>
+                                <span class="tech-tag">DDD</span>
+                                <span class="tech-tag">Xunit</span>
+                                <span class="tech-tag">Azure DevOps</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="school">
-                    Universidad Simón Bolivar
+
+                <!-- Digital Ware -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniero Experto</h3>
+                            <span class="company">Digital Ware S.A.</span>
+                            <span class="period">Febrero 2021 - Mayo 2024</span>
+                            <span class="location">Bogotá, Colombia</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project-name"><strong>Proyecto Klinic HIS</strong> - Sector Salud</p>
+                            <p>
+                                Sistema integral para entidades de salud: historia clínica electrónica, 
+                                registro de pacientes, atención médica y hospitalización.
+                            </p>
+                            <ul class="responsibilities">
+                                <li>Liderazgo en desarrollo de componentes con API REST .NET Core y Angular</li>
+                                <li>Diseño, optimización y mantenimiento de código escalable</li>
+                                <li>Creación de prototipos y productos mínimos viables</li>
+                                <li>Promoción de buenas prácticas de desarrollo</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">.NET 5</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Entity Framework</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </section>
-    </main>
+
+                <!-- Cloud Technologies Center -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniero Junior</h3>
+                            <span class="company">Cloud Technologies Center</span>
+                            <span class="period">Febrero 2019 - Enero 2021</span>
+                            <span class="location">Barranquilla, Colombia</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project-name"><strong>Control Academic & CloudStore</strong> - Educación y E-commerce</p>
+                            <p>
+                                ERP para instituciones educativas implementado en 80+ escuelas en Colombia, México y Chile.
+                            </p>
+                            <ul class="responsibilities">
+                                <li>Desarrollo de API REST con .NET Core</li>
+                                <li>Frontend con Angular para experiencia de usuario moderna</li>
+                                <li>Diseño y optimización de bases de datos SQL Server</li>
+                                <li>Integración de pasarelas de pago y Google Maps</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Entity Framework</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Janus IT -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniero Junior</h3>
+                            <span class="company">Janus IT S.A.S</span>
+                            <span class="period">Junio 2015 - Enero 2016</span>
+                            <span class="location">Barranquilla, Colombia</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="project-name"><strong>CitasWeb</strong> - Sector Salud</p>
+                            <p>Sistema web de agendamiento de citas para instituciones de salud.</p>
+                            <ul class="responsibilities">
+                                <li>Desarrollo con Laravel para gestión de lógica de negocio</li>
+                                <li>Implementación de base de datos PostgreSQL</li>
+                                <li>Control de versiones con Git</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Mi Stack</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">C# / .NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">.NET Core / .NET 8</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Entity Framework</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">API REST</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Angular 14+</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Bases de Datos</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Stored Procedures</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Cloud -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Herramientas & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure DevOps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Methodologies -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Metodologías</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Scrum</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DDD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SOLID</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Arquitectura Hexagonal</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Otras Tecnologías</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SignalR</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JWT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Swagger</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SonarQube</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Reporting Services</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Mi Trabajo</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Aquí encontrarás algunos de los proyectos más relevantes en los que he trabajado
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: SIM -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/sim.jpg" alt="Proyecto SIM">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sector Salud</span>
+                        <h3 class="project-title">SIM - Sistema Integral Médico</h3>
+                        <p class="project-description">
+                            Plataforma para atención de pacientes con tratamientos de alto costo, 
+                            integrando programación de citas, atención domiciliaria y gestión de historiales clínicos.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET Framework 4.5</span>
+                            <span>Angular 10</span>
+                            <span>SQL Server</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Fidu-Previsora -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/fidu.jpg" alt="Fidu-Previsora">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sector Financiero</span>
+                        <h3 class="project-title">Fidu-Previsora</h3>
+                        <p class="project-description">
+                            Plataforma fiduciaria para administración y gestión de negocios fiduciarios, 
+                            con enfoque en seguridad y cumplimiento normativo.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET 8</span>
+                            <span>PostgreSQL</span>
+                            <span>DDD</span>
+                            <span>Azure DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Klinic HIS -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/klinic.jpg" alt="Klinic HIS">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sector Salud</span>
+                        <h3 class="project-title">Klinic HIS</h3>
+                        <p class="project-description">
+                            Sistema integral de información hospitalaria para gestión de historia clínica electrónica, 
+                            registro de pacientes y atención médica.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET 5</span>
+                            <span>Angular</span>
+                            <span>SQL Server</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Control Academic -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/control-academic.jpg" alt="Control Academic">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sector Educación</span>
+                        <h3 class="project-title">Control Academic</h3>
+                        <p class="project-description">
+                            ERP educativo implementado en 80+ instituciones en Colombia, México y Chile, 
+                            optimizando gestión académica y administrativa.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET Core</span>
+                            <span>Angular</span>
+                            <span>MySQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: CloudStore -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/cloudstore.jpg" alt="CloudStore">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">E-commerce</span>
+                        <h3 class="project-title">CloudStore</h3>
+                        <p class="project-description">
+                            Plataforma de comercio electrónico para venta de materiales escolares con 
+                            pasarela de pago integrada.
+                        </p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>.NET Core</span>
+                            <span>SQL Server</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: CitasWeb -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/projects/citasweb.jpg" alt="CitasWeb">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Ver detalles">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Sector Salud</span>
+                        <h3 class="project-title">CitasWeb</h3>
+                        <p class="project-description">
+                            Sistema de agendamiento de citas médicas para instituciones de salud, 
+                            optimizando la gestión y consulta de citas.
+                        </p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PostgreSQL</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-note">
+                <p>
+                    <i class="fas fa-info-circle"></i>
+                    Esta sección se actualiza constantemente con nuevos proyectos. 
+                    Los detalles específicos de algunos proyectos están protegidos por acuerdos de confidencialidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Formación</span>
+                <h2 class="section-title">Educación y Certificaciones</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="education-content">
+                <!-- Formal Education -->
+                <div class="education-block">
+                    <h3 class="block-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Educación Formal
+                    </h3>
+                    <div class="education-grid">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-info">
+                                <h4>Ingeniero de Sistemas</h4>
+                                <p class="institution">Universidad Simón Bolívar</p>
+                                <p class="specialization">Especialidad: Ingeniería de Software</p>
+                                <p class="period">Enero 2016 - Agosto 2021</p>
+                                <p class="location">Barranquilla, Colombia</p>
+                            </div>
+                        </div>
+
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="education-info">
+                                <h4>Técnico en Programación de Software</h4>
+                                <p class="institution">SENA - Servicio Nacional de Aprendizaje</p>
+                                <p class="period">Enero 2015 - Enero 2016</p>
+                                <p class="location">Barranquilla, Colombia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="education-block">
+                    <h3 class="block-title">
+                        <i class="fas fa-award"></i>
+                        Certificaciones Profesionales
+                    </h3>
+                    <div class="certifications-grid">
+                        <div class="certification-card">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Scrum Foundation Professional Certificate</h4>
+                            </div>
+                            <p class="cert-issuer">CertiProf International</p>
+                            <p class="cert-date">Abril 2022</p>
+                        </div>
+
+                        <div class="certification-card">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Angular y Spring Boot: Full Stack App</h4>
+                            </div>
+                            <p class="cert-issuer">Udemy</p>
+                            <p class="cert-date">Mayo 2024</p>
+                        </div>
+
+                        <div class="certification-card">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>Node.js de Cero a Experto</h4>
+                            </div>
+                            <p class="cert-issuer">Udemy</p>
+                            <p class="cert-date">Agosto 2020</p>
+                        </div>
+
+                        <div class="certification-card">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>JavaScript Tutorial Course</h4>
+                            </div>
+                            <p class="cert-issuer">SoloLearn</p>
+                            <p class="cert-date">Septiembre 2019</p>
+                        </div>
+
+                        <div class="certification-card">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>English Certificate A2 Elementary</h4>
+                            </div>
+                            <p class="cert-issuer">EF SET</p>
+                            <p class="cert-date">36/100</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="education-block">
+                    <h3 class="block-title">
+                        <i class="fas fa-language"></i>
+                        Idiomas
+                    </h3>
+                    <div class="languages-grid">
+                        <div class="language-card">
+                            <h4>Español</h4>
+                            <p>Nativo</p>
+                            <div class="language-level">
+                                <div class="level-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="language-card">
+                            <h4>Inglés</h4>
+                            <p>Profesional Básico (A2)</p>
+                            <div class="language-level">
+                                <div class="level-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Hablemos</span>
+                <h2 class="section-title">Contáctame</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    ¿Tienes un proyecto en mente? ¿Buscas un desarrollador para tu equipo? 
+                    No dudes en contactarme
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:zmiguel96@gmail.com">zmiguel96@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <a href="tel:+573005997373">+57 300 599 7373</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Barranquilla, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Sígueme en</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/miguel-zambrano-herrera" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Devmiguelz" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:zmiguel96@gmail.com" class="social-link email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Miguel Zambrano Herrera. Todos los derechos reservados.</p>
+                    <p>Diseñado y desarrollado con <i class="fas fa-heart"></i> en Colombia</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre Mí</a>
+                    <a href="#experience">Experiencia</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
